@@ -4,82 +4,46 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-importers:
-
-  .:
-    devDependencies:
-      husky:
-        specifier: ^8.0.3
-        version: 8.0.3
-
-  packages/all-about-ai:
-    dependencies:
-      '@google/generative-ai':
-        specifier: ^0.1.1
-        version: 0.1.1
-      ky:
-        specifier: ^1.1.3
-        version: 1.1.3
-      prettier:
-        specifier: ^3.0.3
-        version: 3.1.0
-
-  packages/clarifai:
-    devDependencies:
-      '@builder.io/qwik':
-        specifier: ^1.3.5
-        version: 1.3.5(@types/node@20.10.8)(undici@0.1.0)
-      '@builder.io/qwik-city':
-        specifier: ^1.3.5
-        version: 1.3.5(@types/node@20.10.8)
-      '@types/eslint':
-        specifier: ^8.56.1
-        version: 8.56.1
-      '@types/node':
-        specifier: ^20.10.8
-        version: 20.10.8
-      '@typescript-eslint/eslint-plugin':
-        specifier: ^6.18.1
-        version: 6.18.1(@typescript-eslint/parser@6.18.1)(eslint@8.56.0)(typescript@5.3.3)
-      '@typescript-eslint/parser':
-        specifier: ^6.18.1
-        version: 6.18.1(eslint@8.56.0)(typescript@5.3.3)
-      eslint:
-        specifier: ^8.56.0
-        version: 8.56.0
-      eslint-plugin-qwik:
-        specifier: ^1.3.5
-        version: 1.3.5(eslint@8.56.0)
-      prettier:
-        specifier: ^3.1.1
-        version: 3.1.1
-      typescript:
-        specifier: 5.3.3
-        version: 5.3.3
-      undici:
-        specifier: '*'
-        version: 0.1.0
-      vite:
-        specifier: ^5.0.11
-        version: 5.0.11(@types/node@20.10.8)
-      vite-tsconfig-paths:
-        specifier: ^4.2.1
-        version: 4.2.1(typescript@5.3.3)(vite@5.0.11)
-
-  packages/scripts:
-    dependencies:
-      '@google/generative-ai':
-        specifier: ^0.1.1
-        version: 0.1.1
-      dotenv:
-        specifier: ^16.3.1
-        version: 16.3.1
-      ky:
-        specifier: ^1.1.3
-        version: 1.1.3
-      prettier:
-        specifier: ^3.0.3
-        version: 3.1.0
+devDependencies:
+  '@builder.io/qwik':
+    specifier: ^1.3.5
+    version: 1.3.5(@types/node@20.10.8)(undici@0.1.0)
+  '@builder.io/qwik-city':
+    specifier: ^1.3.5
+    version: 1.3.5(@types/node@20.10.8)
+  '@types/eslint':
+    specifier: ^8.56.1
+    version: 8.56.1
+  '@types/node':
+    specifier: ^20.10.8
+    version: 20.10.8
+  '@typescript-eslint/eslint-plugin':
+    specifier: ^6.18.1
+    version: 6.18.1(@typescript-eslint/parser@6.18.1)(eslint@8.56.0)(typescript@5.3.3)
+  '@typescript-eslint/parser':
+    specifier: ^6.18.1
+    version: 6.18.1(eslint@8.56.0)(typescript@5.3.3)
+  eslint:
+    specifier: ^8.56.0
+    version: 8.56.0
+  eslint-plugin-qwik:
+    specifier: ^1.3.5
+    version: 1.3.5(eslint@8.56.0)
+  prettier:
+    specifier: ^3.1.1
+    version: 3.1.1
+  typescript:
+    specifier: 5.3.3
+    version: 5.3.3
+  undici:
+    specifier: '*'
+    version: 0.1.0
+  vite:
+    specifier: ^5.0.11
+    version: 5.0.11(@types/node@20.10.8)
+  vite-tsconfig-paths:
+    specifier: ^4.2.1
+    version: 4.2.1(typescript@5.3.3)(vite@5.0.11)
 
 packages:
 
@@ -384,11 +348,6 @@ packages:
     resolution: {integrity: sha512-gMsVel9D7f2HLkBma9VbtzZRehRogVRfbr++f06nL2vnCGCNlzOD+/MUov/F4p8myyAHspEhVobgjpX64q5m6A==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
-
-  /@google/generative-ai@0.1.1:
-    resolution: {integrity: sha512-cbzKa8mT9YkTrT4XUuENIuvlqiJjwDgcD2Ks4L99Az9dWLgdXn8xnETEAZLOpqzoGx+1PuATZqlUnVRAeLbMgA==}
-    engines: {node: '>=18.0.0'}
-    dev: false
 
   /@humanwhocodes/config-array@0.11.14:
     resolution: {integrity: sha512-3T8LkOmg45BV5FICb15QQMsyUSWrQ8AygVfC7ZG32zOalnqrilm018ZVCw0eapXux8FtA33q8PSRSstjee3jSg==}
@@ -1327,11 +1286,6 @@ packages:
       domhandler: 5.0.3
     dev: true
 
-  /dotenv@16.3.1:
-    resolution: {integrity: sha512-IPzF4w4/Rd94bA9imS68tZBaYyBWSCE47V1RGuMrB94iyTOIEwRmVL2x/4An+6mETpLrKJ5hQkB8W4kFAadeIQ==}
-    engines: {node: '>=12'}
-    dev: false
-
   /end-of-stream@1.4.4:
     resolution: {integrity: sha512-+uw1inIHVPQoaVuHzRyXd21icM+cnt4CzD5rW+NC1wjOUSTOs+Te7FOv7AhN7vS9x/oIyhLP5PR1H+phQAHu5Q==}
     dependencies:
@@ -1849,12 +1803,6 @@ packages:
     resolution: {integrity: sha512-u8u5ZaG0Tr/VvHlucK2ufMuOp4/5bvwgneXle+y228K5rMbJOlVjThONcaAw3ikAy8b2OO9RfEucdMHFz3UWMA==}
     dev: true
 
-  /husky@8.0.3:
-    resolution: {integrity: sha512-+dQSyqPh4x1hlO1swXBiNb2HzTDN1I2IGLQx1GrBuiqFJfoMrnZWwVmatvSiO+Iz8fBUnf+lekwNo4c2LlXItg==}
-    engines: {node: '>=14'}
-    hasBin: true
-    dev: true
-
   /ignore@5.3.0:
     resolution: {integrity: sha512-g7dmpshy+gD7mh88OC9NwSGTKoc3kyLAZQRU1mt53Aw/vnvfXnbC+F/7F7QoYVKbV+KNvJx8wArewKy1vXMtlg==}
     engines: {node: '>= 4'}
@@ -2099,11 +2047,6 @@ packages:
     resolution: {integrity: sha512-o+NO+8WrRiQEE4/7nwRJhN1HWpVmJm511pBHUxPLtp0BUISzlBplORYSmTclCnJvQq2tKu/sgl3xVpkc7ZWuQQ==}
     engines: {node: '>=6'}
     dev: true
-
-  /ky@1.1.3:
-    resolution: {integrity: sha512-t7q8sJfazzHbfYxiCtuLIH4P+pWoCgunDll17O/GBZBqMt2vHjGSx5HzSxhOc2BDEg3YN/EmeA7VKrHnwuWDag==}
-    engines: {node: '>=18'}
-    dev: false
 
   /levn@0.4.1:
     resolution: {integrity: sha512-+bT2uH4E5LGE7h/n3evcS/sQlJXCpIp6ym8OWJ5eV6+67Dsql/LaaT7qJBAt2rzfoa/5QBGBhxDix1dMt2kQKQ==}
@@ -2716,12 +2659,6 @@ packages:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
     dev: true
-
-  /prettier@3.1.0:
-    resolution: {integrity: sha512-TQLvXjq5IAibjh8EpBIkNKxO749UEWABoiIZehEPiY4GNpVdhaFKqSTu+QrlU6D2dPAfubRmtJTi4K4YkQ5eXw==}
-    engines: {node: '>=14'}
-    hasBin: true
-    dev: false
 
   /prettier@3.1.1:
     resolution: {integrity: sha512-22UbSzg8luF4UuZtzgiUOfcGM8s4tjBv6dJRT7j275NXsy2jb4aJa4NNveul5x4eqlF1wuhuR2RElK71RvmVaw==}
