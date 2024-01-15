@@ -6,7 +6,8 @@
   "scripts": {
        "commit": "pnpm --filter scripts commit",
      "ai-prettier": "pnpm --filter @koisose/ai fmt",
-    "scripts-prettier": "pnpm --filter scripts fmt"  },
+    "scripts-prettier": "pnpm --filter scripts fmt",
+    "commit-clarifai": "node commit-clarifai.mjs"},
   "keywords": [],
   "author": "",
   "license": "ISC",
